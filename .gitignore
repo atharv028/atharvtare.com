@@ -1,0 +1,7 @@
+# Private notes and drafts: never publish (the repo is public for GitHub Pages)
+stories.txt
+portfolio-data.json
+
+# Local tooling
+.claude/
+.DS_Store

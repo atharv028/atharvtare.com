@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Atharv Tare, software engineer</title>
+  <meta name="description" content="Front end, back end, cloud. Atharv Tare builds interfaces, APIs and the infrastructure under them, proven on an app with 5 million users." />
+  <meta property="og:title" content="Atharv Tare, software engineer" />
+  <link rel="canonical" href="https://atharvtare.com/" />
+  <meta property="og:url" content="https://atharvtare.com/" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <meta property="og:description" content="Front end, back end, cloud: one engineer, proven at 5M users." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="top wrap">
+    <a class="top__name" href="#main">Atharv Tare</a>
+    <nav class="top__links" aria-label="Page">
+      <a href="work.html">Work history</a>
+      <a href="Atharv_Resume.pdf" target="_blank" rel="noopener">Résumé</a>
+      <a href="mailto:hire.atharv@gmail.com">hire.atharv@gmail.com</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="name">
+      <h1 id="name" class="hero__name">Atharv<br />Tare</h1>
+      <div class="hero__side">
+        <p class="hero__line">Front end, back end, cloud: one engineer, proven at 5M users.</p>
+        <p class="hero__sub">I build the screens people use, the APIs behind them, and the infrastructure that keeps both running on AWS and GCP. Right now I run all of the infrastructure at CogniAI.</p>
+        <div class="actions">
+          <button class="btn" type="button" data-vcard>Save my contact card</button>
+          <a class="link" href="mailto:hire.atharv@gmail.com">Email me</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="trace wrap" aria-labelledby="trace-h">
+      <div class="trace__head">
+        <h2 id="trace-h">Your visit to this page, traced live</h2>
+        <p class="trace__total"><span id="traceTotal">measuring</span></p>
+      </div>
+      <ol class="spans" id="visitSpans" aria-live="polite"></ol>
+      <p class="trace__turn">Your request stopped at a static file. A real product keeps going, and I've built every hop:</p>
+      <ol class="spans spans--stack">
+        <li class="span" style="--c: var(--l1); --x: 0; --w: 100"><a href="#interface"><span class="span__name">Interface</span><span class="span__track"><i></i></span><span class="span__meta">React, Next.js, TypeScript</span></a></li>
+        <li class="span" style="--c: var(--l2); --x: 6; --w: 82"><a href="#services"><span class="span__name">Services</span><span class="span__track"><i></i></span><span class="span__meta">Node.js, Go</span></a></li>
+        <li class="span" style="--c: var(--l3); --x: 14; --w: 62"><a href="#events"><span class="span__name">Events and data</span><span class="span__track"><i></i></span><span class="span__meta">Kafka, MongoDB, Postgres</span></a></li>
+        <li class="span" style="--c: var(--l4); --x: 22; --w: 44"><a href="#platform"><span class="span__name">Platform</span><span class="span__track"><i></i></span><span class="span__meta">Kubernetes, ArgoCD, Terraform</span></a></li>
+        <li class="span" style="--c: var(--l5); --x: 28; --w: 30"><a href="#cloud"><span class="span__name">Cloud and cost</span><span class="span__track"><i></i></span><span class="span__meta">AWS, GCP</span></a></li>
+      </ol>
+    </section>
+
+    <section class="layer wrap" id="interface" style="--c: var(--l1)" aria-labelledby="interface-h">
+      <p class="layer__tag">Interface</p>
+      <div class="layer__body">
+        <h2 id="interface-h">The part people see</h2>
+        <div class="layer__text">
+          <p>Dashboards, forms and marketing sites in TypeScript and Next.js. For Forethought I built a client's data-entry forms and dashboard from the first sketch to the production deploy.</p>
+          <p>This page is hand-written HTML, CSS and JavaScript, with no framework. <span id="pageStats">For you it loaded in a fraction of a second.</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="layer wrap" id="services" style="--c: var(--l2)" aria-labelledby="services-h">
+      <p class="layer__tag">Services</p>
+      <div class="layer__body">
+        <h2 id="services-h">The APIs behind it</h2>
+        <div class="layer__text">
+          <p>Node.js and Go services for an app with 5 million users and 400,000 of them active every month.</p>
+          <ul class="proof">
+            <li><b>3× faster</b> main API after reworking caching and MongoDB indexes</li>
+            <li><b>65% lower</b> response latency for users</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="layer wrap" id="events" style="--c: var(--l3)" aria-labelledby="events-h">
+      <p class="layer__tag">Events and data</p>
+      <div class="layer__body">
+        <h2 id="events-h">Work that can't wait for a request</h2>
+        <div class="layer__text">
+          <p>I moved core workflows onto Kafka, so traffic spikes queue up instead of knocking things over. I also wrote a backup tool that copies MongoDB, Postgres and SQLite to S3 and posts the result in Slack.</p>
+          <ul class="proof">
+            <li><b>50% more</b> throughput through the event pipelines</li>
+            <li><b>40% better</b> fault tolerance at peak load</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="layer wrap" id="platform" style="--c: var(--l4)" aria-labelledby="platform-h">
+      <p class="layer__tag">Platform</p>
+      <div class="layer__body">
+        <h2 id="platform-h">Deploys nobody has to babysit</h2>
+        <div class="layer__text">
+          <p>GitHub Actions and ArgoCD with blue-green releases, so a bad deploy rolls back in one step. OpenTelemetry and SigNoz wired to Slack, so the team hears about a problem before users do.</p>
+          <ul class="proof">
+            <li><b>2 hours to 10 minutes</b> to stand up a new environment with Terraform</li>
+            <li><b>Zero downtime</b> on releases across production and staging</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="layer wrap" id="cloud" style="--c: var(--l5)" aria-labelledby="cloud-h">
+      <p class="layer__tag">Cloud and cost</p>
+      <div class="layer__body">
+        <h2 id="cloud-h">Paying only for what you use</h2>
+        <div class="layer__text">
+          <p>At CogniAI I'm the only infrastructure engineer. I moved production from AWS to GCP, EKS to GKE and RDS to Cloud SQL, and brought the infrastructure bill down by 30%.</p>
+          <p>On one GKE cluster, pods asked for 16 CPU cores and used about 3. I resized all 30 services from real usage, moved them onto smaller autoscaling nodes one group at a time, and nothing went down.</p>
+          <ul class="proof">
+            <li><b>$922 to $630</b> a month for that cluster</li>
+            <li><b>53% less</b> CPU reserved for the same traffic</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="history wrap" id="history" aria-labelledby="history-h">
+      <h2 id="history-h">Where I've worked</h2>
+      <ol class="jobs">
+        <li><span class="jobs__when">2024 to now</span><a class="jobs__what" href="work.html#cogniai"><b>DevOps Engineer</b>, CogniAI</a></li>
+        <li><span class="jobs__when">2023 to 2024</span><a class="jobs__what" href="work.html#appyhigh"><b>Software Engineer</b>, AppyHigh</a></li>
+        <li><span class="jobs__when">2022 to 2023</span><a class="jobs__what" href="work.html#appyhigh-intern"><b>Software Engineer, intern</b>, AppyHigh</a></li>
+        <li><span class="jobs__when">2022 to 2023</span><a class="jobs__what" href="work.html#forethought"><b>Full-stack developer, freelance</b>, Forethought</a></li>
+        <li><span class="jobs__when">2021 to 2022</span><a class="jobs__what" href="work.html#ibdtd"><b>Android developer, intern</b>, IBDTD Technologies</a></li>
+      </ol>
+      <p class="history__more"><a class="link" href="work.html">Read what I did in each role</a></p>
+    </section>
+
+    <section class="close wrap" aria-labelledby="close-h">
+      <h2 id="close-h">Not hiring right now?</h2>
+      <p>Keep my card anyway. When a frontend, backend or infrastructure role opens on your team, I'm one email away.</p>
+      <div class="actions">
+        <button class="btn" type="button" data-vcard>Save my contact card</button>
+        <a class="link" href="mailto:hire.atharv@gmail.com">Email me</a>
+        <a class="link" href="https://linkedin.com/in/atharv-tare" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="link" href="https://github.com/atharv028" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot wrap">
+    <p>© <span id="year">2026</span> Atharv Tare, Delhi. Built by hand.</p>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
